@@ -24,7 +24,7 @@ def mgetopt():
 def main():
 	opts = mgetopt()
 	if opts:
-		scanner()
+		scanner(opts['-r'])
 
 if __name__ == '__main__':
 	main()
