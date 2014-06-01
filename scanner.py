@@ -1,0 +1,2 @@
+class scanner(object):
+	pass
