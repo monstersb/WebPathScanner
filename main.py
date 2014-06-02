@@ -16,6 +16,8 @@ def mgetopt():
 			raise
 		if opts.has_key('-t'):
 			opts['-t'] = int(opts['-t'])
+		else:
+			opts['-t'] = 3
 		return opts
 	except:
 		error = 'Bad Parameter!'
@@ -24,7 +26,7 @@ def mgetopt():
 def main():
 	opts = mgetopt()
 	if opts:
-		scanner(opts['-r'])
+		scanner(opts['-r'], opts['-t'])
 
 if __name__ == '__main__':
 	main()
